@@ -1,5 +1,5 @@
 {% set name = "onnxscript" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/onnxscript-{{ version }}.tar.gz
-  sha256: 71216486471e2acba7f85614c4bea7f1d4a80437d533680a24711c6542fa560e
+  sha256: ed1ef3225a5716b35e2b1e74c25a40e203b18b525165dbaa8fb7fb5ad44c7bf1
 
 build:
   noarch: python
