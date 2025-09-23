@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - ml_dtypes
     - numpy
-    - onnx-ir >=0.1.7,<2
+    - onnx-ir >=0.1.9,<2
     - onnx >=1.16
     - packaging
     - typing_extensions >=4.10
