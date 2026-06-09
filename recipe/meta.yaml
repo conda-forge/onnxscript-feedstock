@@ -1,13 +1,12 @@
-{% set name = "onnxscript" %}
-{% set version = "0.5.6" %}
+{% set version = "0.7.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: onnxscript
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/onnxscript-{{ version }}.tar.gz
-  sha256: cc3338b2976daffd2af0bb6ac4866a4dca76aefface1666a0d7bc65ad9850822
+  url: https://pypi.org/packages/source/o/onnxscript/onnxscript-{{ version }}.tar.gz
+  sha256: c95ed7b339b02cface56ee27689565c46612e1fc542c562298dddfdad5268dc5
 
 build:
   noarch: python
@@ -23,8 +22,8 @@ requirements:
     - python >={{ python_min }}
     - ml_dtypes
     - numpy
-    - onnx-ir >=0.1.12,<2
-    - onnx >=1.16
+    - onnx-ir >=0.1.16,<2
+    - onnx >=1.17
     - packaging
     - typing_extensions >=4.10
 
